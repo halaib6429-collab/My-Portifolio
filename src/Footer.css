@@ -1,0 +1,241 @@
+/* Subscribe Section */
+
+  
+  /* Send Button */
+  .subscribe-top {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .subscribe-send {
+    padding: 10px 30px;
+    background: rgb(255, 253, 141);
+    color: #333;
+    border: 1px solid #333;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .subscribe-send:hover {
+    background: #333;
+    color: rgb(255, 253, 141);
+  }
+  
+  /* Subscribe Box */
+  .subscribe-box {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    background: #fff;
+    border-radius: 18px;
+  }
+  
+  .subscribe-box h3 {
+    margin: 0;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .subscribe-form {
+    flex: 1;
+    max-width: 550px;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    border: 1px solid #777;
+    border-radius: 12px;
+  }
+  
+  .subscribe-form input {
+    flex: 1;
+    width: 0;
+    min-width: 0;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #333;
+  }
+  
+  .subscribe-form button {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 10px;
+    background: rgb(255, 253, 141);
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .subscribe-form button:hover {
+    background: #333;
+    color: rgb(255, 253, 141);
+  }
+  
+  /* Footer */
+  .portfolio-footer {
+    width: 100%;
+    padding: 0px 7%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background: #222;
+    color: #fff;
+  }
+  
+  .portfolio-footer h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .footer-socials {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .footer-socials a {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #888;
+    border-radius: 50%;
+    color: rgb(255, 253, 141);
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .footer-socials a:hover {
+    background: rgb(255, 253, 141);
+    color: #222;
+    border-color: rgb(255, 253, 141);
+  }
+  
+  /* Tablet */
+  @media (max-width: 900px) {
+    .subscribe-box {
+      padding: 25px;
+      gap: 20px;
+    }
+  
+    .subscribe-box h3 {
+      font-size: 14px;
+    }
+  
+    .subscribe-form button {
+      padding: 10px 16px;
+    }
+  }
+  
+  /* Mobile */
+  @media (max-width: 600px) {
+    .subscribe-section {
+      padding: 25px 15px 0;
+      min-height: auto;
+      padding-bottom: 25px;
+    }
+  
+    .subscribe-top {
+      margin-bottom: 35px;
+    }
+  
+    .subscribe-box {
+      flex-direction: column;
+      align-items: stretch;
+      padding: 25px 18px;
+      gap: 20px;
+      border-radius: 15px;
+    }
+  
+    .subscribe-box h3 {
+      text-align: center;
+      font-size: 14px;
+    }
+  
+    .subscribe-form {
+      width: 100%;
+    }
+  
+    .subscribe-form input {
+      font-size: 12px;
+      padding: 10px 5px;
+    }
+  
+    .subscribe-form button {
+      padding: 10px 12px;
+      font-size: 12px;
+    }
+  
+    .portfolio-footer {
+      padding: 22px 20px;
+      color: rgb(255, 253, 141) !important;
+    }
+  
+    .portfolio-footer h2 {
+    font-size: 21px;
+    color: rgb(255, 253, 141) !important;
+    }
+  
+    .footer-socials {
+      gap: 8px;
+    }
+  
+    .footer-socials a {
+      width: 32px;
+      height: 32px;
+    }
+  }
+.ss{
+    position: relative;
+}
+  /* Subscribe Box */
+  .subscribe-box {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+    width: 90%;
+    max-width: 1100px;
+    min-height: 110px;
+    padding: 25px 40px;
+    box-sizing: border-box;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    background: #cfcfcf;
+    border-radius: 18px;
+    z-index: 10;
+  }
+  
+  /* Footer */
+  .portfolio-footer {
+    position: relative;
+    width: 100%;
+    padding: 95px 7% 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background: #222;
+    color: rgb(255, 253, 141) !important;
+  }

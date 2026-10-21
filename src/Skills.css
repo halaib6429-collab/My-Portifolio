@@ -1,0 +1,179 @@
+/* Skills Section */
+.skills-section {
+    width: 100%;
+    padding: 0 20px;
+    background:url("./vid/a.mp4");
+    color: white;
+    box-sizing: border-box;
+  }
+  
+  .skills-container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  /* Title */
+  .skills-title {
+    margin: 0 0 15px;
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    color: rgb(211, 209, 209);
+  }
+  
+  .skills-title span {
+    color: rgb(255, 253, 141);
+  }
+  
+  .skills-description {
+    margin: 0 0 65px;
+    text-align: center;
+    font-size: 16px;
+    color: rgb(211, 209, 209);
+  }
+  
+  /* Carousel */
+  .skills-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
+  }
+  
+  .skills-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 52px;
+    height: 52px;
+    border: 1px solid rgb(255, 253, 141);
+    border-radius: 50%;
+    background: transparent;
+    color: rgb(255, 253, 141);
+    font-size: 24px;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 20;
+  }
+  
+  .skills-arrow:hover {
+    background-color: rgb(255, 253, 141);
+    color: #111;
+  }
+  
+  /* Skills Track */
+  .skills-track {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    min-width: 0;
+    height: 360px;
+    overflow: hidden;
+  }
+  
+  /* Skill Card */
+  .skill-card {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 190px;
+  }
+  
+  /* Circle */
+  .skill-circle {
+    width: 170px;
+    height: 170px;
+    flex-shrink: 0;
+  }
+  
+  /* Progress Ring */
+  .skill-progress {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  
+  /* Inner Circle */
+  .skill-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    height: 85%;
+    border-radius: 50%;
+    background-color: #111;
+  }
+  
+  .skill-inner span {
+    color: rgb(211, 209, 209);
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+  /* Skill Name */
+  .skill-name {
+    margin: 20px 0 0;
+    color: rgb(211, 209, 209);
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    white-space: nowrap;
+  }
+  
+  /* Navigation Dots */
+  .skills-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+    color:rgb(255, 253, 141);
+  }
+.skills-dot {
+    width: 9px;
+    height: 9px;
+    padding: 0;
+    border: none;
+    border-radius: 10px;
+    background-color: #555;
+    cursor: pointer;
+    transition:0.3s;
+}
+.skills-section {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+  }
+  
+  .skills-video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+  }
+  
+  .skills-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: -1;
+  }
+  
+  .skills-container {
+    position: relative;
+    z-index: 1;
+  }
